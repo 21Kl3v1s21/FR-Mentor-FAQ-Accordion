@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Light-Pink: hsl(275, 100%, 97%);
+  --Gray-Purple: hsl(292, 16%, 49%);
+  --Dark-Purple: hsl(292, 42%, 14%);
+}
+
+body {
+  min-height: 100vh;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background-color: var(--Light-Pink);
+  background-position: top;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.faq-accordion {
+  display: block;
+  padding: 40px 15px;
+  margin: auto;
+  color: var(--Dark-Purple);
+  background-color: hsl(0, 0%, 100%);
+  width: 34%;
+  height: 20%;
+  border-radius: 1rem;
+  box-shadow: 0 30px 100px -50px black;
+}
+
+.faq-heading {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.faq-content {
+  margin-bottom: 10px;
+}
+
+.faq-dropdown {
+  border-bottom: 1px solid #ccc;
+}
+
+.faq-dropdown-header {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 18px 0;
+  margin-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-dropdown-header h4 {
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq-icon {
+  border: 0px;
+  width: 30px;
+  height: 30px;
+  background: url("/assets/images/icon-plus.svg");
+  background-size: cover;
+  background-color: inherit;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: absolute;
+  right: 10px;
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for proper centering */
+}
+
+.faq-dropdown-body {
+  margin-bottom: 15px;
+  display: none;
+}
+
+.faq-dropdown-body.open {
+  display: block;
+}
+
+.faq-icon.open {
+  background: url("/assets/images/icon-minus.svg");
+  transition: 0.3s ease;
+}
+
+.footer {
+  font-size: 15px;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--Dark-Purple);
+}
+
+@media (max-width: 760px) {
+  body {
+    background: url("/assets/images/background-pattern-mobile.svg") no-repeat;
+    background-size: 100%;
+    min-width: 375px;
+  }
+
+  .faq-accordion {
+    min-width: 400px;
+    margin: auto;
+  }
+}
