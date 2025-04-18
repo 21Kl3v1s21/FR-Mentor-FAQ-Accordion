@@ -22,7 +22,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: url("./assets/images/background-pattern-desktop.svg") no-repeat;
+  background: url("assets/images/background-pattern-desktop.svg") no-repeat;
   background-color: var(--Light-Pink);
   background-position: top;
   background-size: 100%;
@@ -34,9 +34,8 @@ body {
   padding: 40px 15px;
   margin: auto;
   color: var(--Dark-Purple);
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--White);
   width: 34%;
-  height: 20%;
   border-radius: 1rem;
   box-shadow: 0 30px 100px -50px black;
 }
@@ -51,7 +50,7 @@ body {
 }
 
 .faq-content {
-  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
 .faq-dropdown {
@@ -76,15 +75,15 @@ body {
   border: 0px;
   width: 30px;
   height: 30px;
-  background: url("./assets/images/icon-plus.svg");
+  background: url("assets/images/icon-plus.svg");
   background-size: cover;
   background-color: inherit;
   cursor: pointer;
   transition: 0.3s ease;
   position: absolute;
   right: 10px;
-  top: 50%; /* Center vertically */
-  transform: translateY(-50%); /* Adjust for proper centering */
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .faq-dropdown-body {
@@ -97,13 +96,14 @@ body {
 }
 
 .faq-icon.open {
-  background: url("./assets/images/icon-minus.svg");
+  background: url("assets/images/icon-minus.svg");
   transition: 0.3s ease;
 }
 
 .footer {
   font-size: 15px;
   text-align: center;
+  margin-top: 50px;
 }
 
 .footer a {
@@ -112,13 +112,13 @@ body {
 
 @media (max-width: 760px) {
   body {
-    background: url("./assets/images/background-pattern-mobile.svg") no-repeat;
+    background: url("assets/images/background-pattern-mobile.svg") no-repeat;
     background-size: 100%;
     min-width: 375px;
   }
 
   .faq-accordion {
-    min-width: 400px;
-    margin: auto;
+    width: 90%;
+    min-width: unset;
   }
 }
