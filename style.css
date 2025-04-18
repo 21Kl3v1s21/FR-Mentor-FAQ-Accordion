@@ -22,7 +22,7 @@ body {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: url("/assets/images/background-pattern-desktop.svg") no-repeat;
+  background: url("./assets/images/background-pattern-desktop.svg") no-repeat;
   background-color: var(--Light-Pink);
   background-position: top;
   background-size: 100%;
@@ -76,7 +76,7 @@ body {
   border: 0px;
   width: 30px;
   height: 30px;
-  background: url("/assets/images/icon-plus.svg");
+  background: url("./assets/images/icon-plus.svg");
   background-size: cover;
   background-color: inherit;
   cursor: pointer;
@@ -97,7 +97,7 @@ body {
 }
 
 .faq-icon.open {
-  background: url("/assets/images/icon-minus.svg");
+  background: url("./assets/images/icon-minus.svg");
   transition: 0.3s ease;
 }
 
@@ -112,7 +112,7 @@ body {
 
 @media (max-width: 760px) {
   body {
-    background: url("/assets/images/background-pattern-mobile.svg") no-repeat;
+    background: url("./assets/images/background-pattern-mobile.svg") no-repeat;
     background-size: 100%;
     min-width: 375px;
   }
